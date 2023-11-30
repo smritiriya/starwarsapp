@@ -1,0 +1,36 @@
+@import "../../styles/var";
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 250px;
+  padding: 1rem;
+
+  .sidebar-menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    .active-menu {
+      background-color: $pink-color;
+    }
+
+    .sidebar-menu-link-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-radius: 10px;
+
+      .sidebar-menu-link {
+        text-decoration: none;
+        color: $white-color;
+        padding-left: 1rem;
+      }
+
+      &:hover {
+        background-color: $gray-color;
+      }
+    }
+  }
+}

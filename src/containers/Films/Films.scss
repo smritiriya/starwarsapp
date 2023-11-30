@@ -1,0 +1,75 @@
+@import "../../styles/var";
+
+.filmspage-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .films-searchbar-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .searchbar-box {
+      padding: 1rem;
+    }
+  }
+
+  .filmspage-moviesection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .filmspage-movietitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      color: $white-color;
+    }
+
+    .filmspage-moviedata {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+    }
+
+    .filmspage-moviestable {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $white-color;
+
+      table {
+        width: 80%;
+        border-spacing: 0;
+
+        thead {
+          tr {
+            background-color: $blue-shade-1;
+
+            th {
+              padding: 1rem;
+              text-align: left;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            border-bottom: 1px solid $white-color;
+
+            td {
+              padding: 1rem;
+              border-bottom: 1px solid $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

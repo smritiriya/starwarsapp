@@ -1,0 +1,23 @@
+@import "../../styles/var";
+
+.searchbar-container {
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid $white-color;
+  padding: 10px;
+  padding-left: 2rem;
+
+  .searchbar-icon {
+    position: absolute;
+    left: 10px;
+  }
+
+  .searchbar-input {
+    width: 100%;
+    background: none;
+    color: $white-color;
+    border: none;
+    outline: none;
+  }
+}
+

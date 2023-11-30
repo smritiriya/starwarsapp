@@ -1,0 +1,50 @@
+@import "../../styles/var";
+
+.filmcard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: $white-color;
+  width: 30%;
+  height: 35%;
+
+  .filmcard-boxarea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .filmcard-image {
+      border-radius: 10px;
+      background-color: $white-color;
+      width: 100%;
+      height: 100%;
+    }
+
+    .filmcard-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: $gray-color;
+      border-radius: 10px;
+      margin-top: 2px;
+
+      .moviecard-name {
+        padding-left: 1rem;
+      }
+
+      .moviecard-menubutton {
+        border-radius: 10px;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: $gray-shade-1;
+
+        &:hover {
+          background-color: $gray-shade-2;
+        }
+      }
+
+    }
+  }
+}
